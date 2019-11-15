@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crud en Blockchain</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Register Users</h1>
+    <div class="row my-4">
+      <div class="col-sm-12 col-md-6">
+        <h3>Create User</h3>
+        <form id="create">
+          <div class="form-group">
+            <label for="">Name: </label>
+            <input type="text" id="nombre" class="form-control" required>
+            <button class="btn btn-success" type="submit">Create</button>
+            <p class="font-weight-bold" id="result"></p>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h3>Search User</h3>
+        <form id="read">
+          <div class="form-group">
+            <label for="">Id: </label>
+            <input type="number" id="user_id" class="form-control">
+          </div>
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+          <p id="user_result"></p>
+        </form>
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col-sm-12 col-md-6">
+        <h3>Update User</h3>
+        <form id="update">
+          <div class="form-group">
+            <label for="">Id: </label>
+            <input type="number" id="_user" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Name: </label>
+            <input type="text" class="form-control" id="user_name">
+          </div>
+          <button class="btn btn-outline-primary" type="submit">Update</button>
+          <p id="update_result"></p>
+        </form>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h3>Delete User</h3>
+        <form id="delete">
+          <div class="form-group">
+            <label for="">Id: </label>
+            <input type="number" id="delete_id" class="form-control">
+          </div>
+          <button class="btn btn-outline-danger" type="submit">Delete</button>
+          <p id="delete_result"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
