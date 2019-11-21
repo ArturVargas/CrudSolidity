@@ -34,10 +34,22 @@ contract('Crud', () => {
   it('Delete User', async () => {
     await crud.deleteUser(1);
     try {
-      
+      await crud.getUser(1);
     } catch (error) {
-      
+      assert(error.message.includes('No se encontro Usuario'));
+      return;
     }
+    assert(false);
+  });
+
+  it('Not Delete a non-existing user', async() => {
+    try {
+      await crud.deleteUser(3);
+    } catch (error) {
+      assert(error.message.includes('No se encontro Usuario'));
+      return;
+    }
+    assert(false);
   })
 
 })
