@@ -15,7 +15,8 @@
 * Para la configuracion de nuestros contratos: `truffle init`
 
 ## First Steps.
-``` Una vez que tengo la estructura inicial del proyecto:
-  contracts, migrations, test, package.json y truffle-config.js
+``` 
+Una vez que tengo la estructura inicial del proyecto:
+contracts, migrations, test, package.json y truffle-config.js
 Iniciaré creando un Contrato llamado CRUD dentro de la carpeta "contracts", donde agregare las funciones de crear, leer, actualizar y borrar usuarios.
 ```
