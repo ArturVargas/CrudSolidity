@@ -10,5 +10,8 @@
     "start": "static-server public"
   },
   "author": "Arthur",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.26"
+  }
 }
